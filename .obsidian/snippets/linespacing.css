@@ -1,0 +1,11 @@
+
+.markdown-preview-view p,
+.markdown-source-view.mod-cm6 .cm-line {
+  line-height: 1.5 !important;
+}
+
+
+.math.math-inline {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}

@@ -7,7 +7,7 @@
   "override_math": true,
   "font_families": [],
   "preamable": {
-    "shared": "#set text(fill: white, size: 26pt)\n#set page(width: WIDTH, height: HEIGHT)",
+    "shared": "#set text(size: 26pt, weight:\"bold\", fill:rgb(\"#96b4fa\"))\n#set page(width: WIDTH, height: HEIGHT)\n#set par(leading: 1.2em)",
     "math": "#set page(margin: 0pt)\n#set align(horizon)",
     "code": "#set page(margin: (y: 1em, x: 0pt))"
   },

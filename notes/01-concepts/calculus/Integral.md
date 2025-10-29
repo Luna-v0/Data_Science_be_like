@@ -24,14 +24,3 @@ $$
 # Properties
 - Property 1
 - Property 2
-
-# Implementation Notes
-[[code/notebooks/related-notebook.ipynb]]
-
-# Related Concepts
-- [[concept-1]]
-- [[concept-2]]
-
-# References
-- Source 1
-- Source 2
