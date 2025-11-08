@@ -1,21 +1,16 @@
 # Definition
 
 $$
-(1) & quad (arrow(u)+arrow(v))+arrow(w) = arrow(u) + (arrow(v)+arrow(w))
-\ 
-(2) & quad arrow(0) + arrow(u) = arrow(u) + arrow(0) = arrow(u)
-\
-(3) & quad arrow(u) + (-arrow(u)) = arrow(0)
-\
-(4) & quad arrow(u) + arrow(v) = arrow(v) + arrow(u)
-\
-(5) & quad alpha (arrow(u) + arrow(v)) = alpha arrow(u) + alpha arrow(v)
-\
-(6) & quad (alpha + beta)arrow(v) = alpha arrow(v) + beta arrow(v)
-\
-(7) & quad (alpha beta)arrow(v) = alpha (beta arrow(v))
-\
-(8) & quad 1 arrow(u) = arrow(u)
+\begin{aligned}
+(1) \quad & (\vec{u}+\vec{v})+\vec{w} = \vec{u} + (\vec{v}+\vec{w}) \\
+(2) \quad & \vec{0} + \vec{u} = \vec{u} + \vec{0} = \vec{u} \\
+(3) \quad & \vec{u} + (-\vec{u}) = \vec{0} \\
+(4) \quad & \vec{u} + \vec{v} = \vec{v} + \vec{u} \\
+(5) \quad & \alpha (\vec{u} + \vec{v}) = \alpha \vec{u} + \alpha \vec{v} \\
+(6) \quad & (\alpha + \beta)\vec{v} = \alpha \vec{v} + \beta \vec{v} \\
+(7) \quad & (\alpha \beta)\vec{v} = \alpha (\beta \vec{v}) \\
+(8) \quad & 1 \vec{u} = \vec{u}
+\end{aligned}
 $$
 
 Most of those properties comes from [[Linearity]]
@@ -23,11 +18,11 @@ Most of those properties comes from [[Linearity]]
 By definition $W$ is a subspace if:
 
 $$
-(1) & quad arrow(v),arrow(w) in W -> arrow(v) + arrow(w) in W
-\
-(2) & quad arrow(v) in W and alpha in RR -> alpha arrow(v) in W
-\
-(3) & quad arrow(0) in W
+\begin{aligned}
+(1) \quad & \vec{v},\vec{w} \in W \to \vec{v} + \vec{w} \in W \\
+(2) \quad & \vec{v} \in W \text{ and } \alpha \in \mathbb{R} \to \alpha \vec{v} \in W \\
+(3) \quad & \vec{0} \in W
+\end{aligned}
 $$
 
 ## Properties of Vector Space and Subspace

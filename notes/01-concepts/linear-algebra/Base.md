@@ -4,12 +4,12 @@
 Why does this matter? What's the big picture?
 
 # Mathematical Formulation
-Use Typst syntax for math:
+Use LaTeX syntax for math:
 
-$bold(x) in RR^n$
+$\mathbf{x} \in \mathbb{R}^n$
 
 $$
-f(x) = sum_(i=1)^n w_i x_i + b
+f(x) = \sum_{i=1}^{n} w_i x_i + b
 $$
 
 # Properties

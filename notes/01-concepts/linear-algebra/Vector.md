@@ -2,10 +2,10 @@
 Is defined as a ordered list of numbers or an array. Geometrically can be interpreted as an arrow in space that has magnitude, direction and orientation.
 
 # Mathematical Formulation
-Normally expressed as $arrow(x)$ or as tuples like:
+Normally expressed as $\vec{x}$ or as tuples like:
 
 $$
-arrow(x) = vec(x_1,x_2,x_3)
+\vec{x} = \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
 $$
 
 They also have a Dimension also known as size in the above example its of size 3
@@ -15,20 +15,19 @@ The [[Vector#Sum]] and the [[Vector#Scalar Multiplication]] are part of the [[Li
 ## Sum
 Sum is only defined for vectors of the same size
 
-$$arrow(x)+arrow(y) = vec(x_1+y_1, x_2 + y_2,\ ,...,\ ,x_n+y_n)$$
+$$\vec{x}+\vec{y} = \begin{pmatrix} x_1+y_1 \\ x_2 + y_2 \\ \ldots \\ x_n+y_n \end{pmatrix}$$
 ## Scalar Multiplication
 
-$$alpha. arrow(x) = vec(alpha x_1,alpha x_2,\ , ...,\ ,alpha x_n)$$
+$$\alpha \cdot \vec{x} = \begin{pmatrix} \alpha x_1 \\ \alpha x_2 \\ \ldots \\ \alpha x_n \end{pmatrix}$$
 
 ## Inner product
 Is any operation that takes two vectors of the same size and returns a single scalar the most famous being the dot product
 ### Dot product
-That operation also is also used for comparing two vectors and returning the distance of them ($theta$ being the angle between the two arrows in space)
+That operation also is also used for comparing two vectors and returning the distance of them ($\theta$ being the angle between the two arrows in space)
 
 $$
-arrow(x) dot arrow(y) = sum_(i=1)^n x_i y_i
-\
-arrow(x) dot arrow(y) = ||arrow(x)|| ||arrow(y)|| cos(theta) 
+\vec{x} \cdot \vec{y} = \sum_{i=1}^{n} x_i y_i \\
+\vec{x} \cdot \vec{y} = \|\vec{x}\| \|\vec{y}\| \cos(\theta) 
 $$
 
 > [!tip] Notice this is highly optimizable using GPU
@@ -37,18 +36,20 @@ $$
 ## Magnitude
 The magnitude can be expressed as simple Pythagoras theorem like:
 
-$$||arrow(x)|| = sqrt(arrow(x) dot arrow(x)) $$
+$$\|\vec{x}\| = \sqrt{\vec{x} \cdot \vec{x}} $$
+
+It is also the [[Nomal|Norm]] and a [[Internal Product]].
 ## Cross Product
 The cross product of two vectors is a new vector orthogonal to all the other vectors, you compute it using the [[Matrix#Determinant]] and the [[Base vectors]]
 
 $$
-arrow(a) times arrow(b) = "Det"(vec(arrow(a),arrow(b), mat(hat(i), hat(j), hat(k))))  
+\vec{a} \times \vec{b} = \det\begin{pmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{pmatrix}  
 $$
 
 When doing it on more dimensions you must do:
 
 $$
-arrow(a) times arrow(b) times arrow(c) = "Det"(vec(arrow(a),arrow(b), arrow(c), mat(hat(i), hat(j), hat(k), hat(w)) ))  
+\vec{a} \times \vec{b} \times \vec{c} = \det\begin{pmatrix} \hat{i} & \hat{j} & \hat{k} & \hat{w} \\ a_1 & a_2 & a_3 & a_4 \\ b_1 & b_2 & b_3 & b_4 \\ c_1 & c_2 & c_3 & c_4 \end{pmatrix}  
 $$
 
 # Code reference
