@@ -6,6 +6,7 @@ $$
 \hat{i} = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} \quad \hat{j} = \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} \quad \hat{k} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} \quad \hat{w} = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
 $$
 
+> [!note] All base vectors are [[Unit Vector|Unit Vectors]]
 # Identity Matrix
 A identity matrix is a squared matrix that has each column (or row) as the column number base vector like this:
 

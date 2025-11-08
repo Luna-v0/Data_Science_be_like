@@ -59,7 +59,19 @@ $$
 A \cdot B = \sum_{k=1}^{n} a_k \cdot b_k^T
 $$
 ## Determinant
-The determinant is a [[Linearity#Bi-linearity or N-linearity|N-linearity Function]] on each 
+The determinant is a [[Linearity#Bi-linearity or N-linearity|N-linearity Function]] on each column.
+
+To compute using column vectors use:
+$$
+det(A) = \sum_{k=1}^n(-1)^{k+j}a_{kj} \;det(A_{k,j})
+$$
+To compute using row vectors use:
+$$
+det(A) = \sum_{k=1}^n(-1)^{k+j}a_{jk} \;det(A_{j,k})
+$$
+It has two important Geometric reasoning. 
+1. $|det(A)|$ computes the area (for $\mathbb{R}²$) or the volume (for $\mathbb{R}³$) of the square/cube created by the vectors. It is related to [[Integral|Integrals]] in that sense.
+2. $sign(det(A))$ Computes the orientation of the underlying points of the vectors.
 
 ## Transposing
 A matrix ( $B(m,n)$ ) is transposed from another matrix ( $A(n,m)$ ) if $b_{ij} = a_{ji}$. Normally written as:
@@ -74,6 +86,7 @@ $$
 & (A+C)^T = A^T + C^T \\ \\
 & (A \cdot C)^T = C^T \cdot A^T
 \end{gather*}
+
 $$
 
 # Rank

@@ -2,8 +2,10 @@
 Any function that follows this rules, $V$ is a [[Vector Spaces|Vector Space]]:
 
 $$
-\text{Given a function } f \quad V \times V \to \mathbb{R} \\
-\forall x,y,z \in V \quad \text{and} \quad \alpha \in \mathbb{R} 
+\begin{gather*}
+\text{Given a function } f \quad V \times V \to \mathbb{R} \\ \\
+\forall x,y,z \in V \quad \land \quad \alpha \in \mathbb{R} 
+\end{gather*}
 $$
 
 $$
@@ -16,3 +18,10 @@ $$
 $$
 
 Definitions, 1 and 2, are based on [[Linearity|Linear functions]].
+
+# Cauchy-Schwarz
+Any internal product $f$ should follow:
+
+$$
+\forall u,v \in V \to |f(u,v)|² \leq f(u,v)f(u,v)
+$$

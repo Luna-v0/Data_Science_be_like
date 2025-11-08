@@ -5,13 +5,20 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:notes/01-concepts/linear-algebra  ",
       "color": {
         "a": 1,
         "rgb": 14736466
+      }
+    },
+    {
+      "query": "path:notes/01-concepts/statistics  ",
+      "color": {
+        "a": 1,
+        "rgb": 5984992
       }
     }
   ],
@@ -26,5 +33,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.6666666666666666,
-  "close": false
+  "close": true
 }

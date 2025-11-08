@@ -14,6 +14,8 @@ $$
 $$
 
 Most of those properties comes from [[Linearity]]
+
+Just to not be too abstract, a space of $\mathbb{R}²$ is actually a plane, because it can "[[Linear definitions#Span|Span]]" all the plane, the same way a space of $\mathbb{R}³$ its the whole 3D space and so on. 
 ## Vector Subspace
 By definition $W$ is a subspace if:
 

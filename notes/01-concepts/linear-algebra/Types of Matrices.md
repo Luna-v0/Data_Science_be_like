@@ -44,7 +44,14 @@ $$
 W \cdot M = I
 $$
 
-Often written as $M^(-1)$
+Often written as $M^{-1}$
+
+# Symmetrical Matrix
+A symmetrical matrix is when
+$$
+M^T = M
+$$
+That can only happen with [[Types of Matrices#Square matrix|Square matrices]].
 # Orthogonal Matrix
 
 # Orthonormal Matrix

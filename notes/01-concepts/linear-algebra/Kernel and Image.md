@@ -7,6 +7,8 @@ $$
 
 \text{Kernel}(\Phi) = \{v \in V \text{ then } \Phi(v) = \vec{0}\}
 \end{gather*}
+
+
 $$
 
 > [!error] This is not the same Kernel as the [[Support Vector Machine|SVM]]
@@ -17,8 +19,12 @@ Is the same definition of functions, for the definition above the Image is all t
 # Kernel & Image Theorem
 
 $$
-\Phi: V \to W \\
+\begin{gather*}
+\Phi: V \to W \\ \\
 \dim(V) = \dim(\text{Kernel}(\Phi)) + \dim(\text{Image}(\Phi))
+\end{gather*}
+
+
 $$
 
 The definition of $\dim$ can be found in [[Linear definitions#Dimension]].
