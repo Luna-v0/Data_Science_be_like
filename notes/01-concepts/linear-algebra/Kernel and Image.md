@@ -2,8 +2,11 @@
 Given a [[Matrix#Linear Transformation View|Linear Transformation]] ($Phi$), the set of input values ($V$) that the transformation maps to the zero [[Vector]] in the output ($W$) is the Kernel. Mathematically expressed as:
 
 $$
-\Phi: V \to W \\
+\begin{gather*}
+ \Phi: V \to W \\
+
 \text{Kernel}(\Phi) = \{v \in V \text{ then } \Phi(v) = \vec{0}\}
+\end{gather*}
 $$
 
 > [!error] This is not the same Kernel as the [[Support Vector Machine|SVM]]

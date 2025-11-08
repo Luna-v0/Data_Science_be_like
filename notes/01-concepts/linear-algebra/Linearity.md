@@ -2,19 +2,23 @@
 A linear function is not said exactly $f(x) = a \cdot x + b$ , but a function that follows two properties.
 
 $$
-f(a+b) = f(a) + f(b) \\
-f(\alpha a) = \alpha f(a) 
+\begin{align}
+f(a+b) & = f(a) + f(b) \\ \\
+f(\alpha a) & = \alpha f(a)
+\end{align}
 $$
 
 By definition we can show that:
 
 $$
+\begin{gather*}
 f(x + y) = a \cdot (x+\alpha y) + b \\
 = a \cdot x + a \cdot \alpha y + b \\
 \\
-f(x) + f(\alpha y) = a \cdot x + a \cdot \alpha y + b^2 \\
+ f(x) + f(\alpha y) = a \cdot x + a \cdot \alpha y + b^2 \\
 \\
-a \cdot x + a \cdot \alpha y + b^2 \neq a \cdot x + a \cdot \alpha y + b
+a \cdot x + a \cdot \alpha y + b^2  \neq a \cdot x + a \cdot \alpha y + b
+\end{gather*}
 $$
 
 Some interest examples of True Linear functions is [[Integral]]

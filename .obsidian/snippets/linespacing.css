@@ -9,3 +9,13 @@
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
+
+
+.math-inline mjx-container[jax="CHTML"] {
+  font-size: 150% !important;
+}
+
+/* Increase size of math blocks */
+.math-block mjx-container[jax="CHTML"] {
+  font-size: 150% !important;
+}

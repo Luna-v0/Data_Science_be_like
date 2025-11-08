@@ -6,7 +6,7 @@ Matrix are also [[Linearity|Linear]] Functions, that map from a [[Vector Spaces#
 You can reduce [[Linearity|Linear]] operations as a single big Matrix using the [[Linearity#Linear composition|Linear Composition]].
 
 # Mathematical Formulation
-A matrix has two dimension, $i \& j$, where lines are $i$. 
+A matrix has two dimension, $i$ and $j$, where lines are $i$. 
 
 $$
 M(n,m) = \begin{pmatrix}
@@ -19,8 +19,10 @@ $$
 
 or as
 $$
-M(n,m) = \begin{pmatrix} \vec{x}_1 & \vec{x}_2 & \ldots & \vec{x}_n \end{pmatrix} \\
-M(n,m) = \begin{pmatrix} \vec{y}_1 \\ \vec{y}_2 \\ \ldots \\ \vec{y}_n \end{pmatrix}
+\begin{align*}
+& M(n,m) = \begin{pmatrix} \vec{x}_1 & \vec{x}_2 & \ldots & \vec{x}_n \end{pmatrix} \\ \\
+& M(n,m) = \begin{pmatrix} \vec{y}_1 \\ \vec{y}_2 \\ \ldots \\ \vec{y}_n \end{pmatrix}
+\end{align*}
 $$
 
 where $\vec{x}_i$ are column vectors and $\vec{y}_i$ are line vectors.
@@ -67,9 +69,11 @@ A^T = B
 $$
 It has a few properties:
 $$
-(A^T)^T = A \\
-(A+C)^T = A^T + C^T \\
-(A \cdot C)^T = C^T \cdot A^T
+\begin{gather*}
+& (A^T)^T = A \\ \\
+& (A+C)^T = A^T + C^T \\ \\
+& (A \cdot C)^T = C^T \cdot A^T
+\end{gather*}
 $$
 
 # Rank

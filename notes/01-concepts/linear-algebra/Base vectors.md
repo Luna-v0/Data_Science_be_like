@@ -17,6 +17,8 @@ The Identity matrix has a special property of [[Matrix#Matrix multiplication|Mat
 
 
 $$
-M(n,n)^{-1} \cdot M(n,n) = I(n) \\
-M(n,n) \cdot I(n) = M(n,n)
+\begin{align}
+(1) &\; M(n,n)^{-1} \cdot M(n,n)  = I(n) \\ \\
+(2) &\; M(n,n) \cdot I(n) = M(n,n)
+\end{align}
 $$

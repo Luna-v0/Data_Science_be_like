@@ -26,8 +26,10 @@ Is any operation that takes two vectors of the same size and returns a single sc
 That operation also is also used for comparing two vectors and returning the distance of them ($\theta$ being the angle between the two arrows in space)
 
 $$
-\vec{x} \cdot \vec{y} = \sum_{i=1}^{n} x_i y_i \\
+\begin{gather*}
+\vec{x} \cdot \vec{y} = \sum_{i=1}^{n} x_i y_i \\ \\
 \vec{x} \cdot \vec{y} = \|\vec{x}\| \|\vec{y}\| \cos(\theta) 
+\end{gather*}
 $$
 
 > [!tip] Notice this is highly optimizable using GPU
