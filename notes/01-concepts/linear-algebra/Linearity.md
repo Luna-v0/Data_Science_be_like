@@ -21,7 +21,9 @@ a \cdot x + a \cdot \alpha y + b^2  \neq a \cdot x + a \cdot \alpha y + b
 \end{gather*}
 $$
 
-Some interest examples of True Linear functions is [[Integral]]
+Some interest examples of True Linear functions is [[Integral]].
+
+> [!error] Any Linear Transformation would keep evenly spaced points inputs into evenly spaced points in the output
 
 # Linear composition
 Composition of Linear functions can be reduced to a single Linear function.
