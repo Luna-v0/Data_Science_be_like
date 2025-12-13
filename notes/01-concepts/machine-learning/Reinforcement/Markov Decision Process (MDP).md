@@ -1,4 +1,8 @@
+MDP is a generic framework for modeling decision problem. It models the environment as Probabilistic Finite Automaton (PFA), where actions are model as transitions, but with a caveat, this transitions has probabilities, so the leading state changes. 
 
+There are other important notions to MDP which will be discussed through out this document. 
+
+Considering:
 $$
 \; s \in States \; \wedge \; a \in Actions
 $$
@@ -17,7 +21,7 @@ R(s_t,a_t,s_{t+1}) \to \mathbb{R}
 $$
 >[!obs] $t$ refers to current and $t+1$ refers to next interations.
 # Value Function
-Also known as the state-value function. It's a function that given a **fixed policy** $\pi$ , it computes the expected summed reward of starting in a state $s$ and following the policy.
+Also known as the state-value function. It's a function that given a **fixed policy** $\pi$ , it computes the [[Expected Value|expected]] summed reward of starting in a state $s$ and following the policy.
 $$
 
 V^{\pi} ( s )=\mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^{t} R ( s_{t} , a_{t} ) | s_{0}=s , a_{t}=\pi( s_{t} ) \right]
@@ -28,7 +32,7 @@ $$
 $$
 
 # Q-value function
-Also know as the action-value function. It's a function that given a **fixed policy** $\pi$, it computes the expected summed reward of starting in a state $s$ and taking the action $a$ and following the policy.
+Also know as the action-value function. It's a function that given a **fixed policy** $\pi$, it computes the [[Expected Value|expected]] summed reward of starting in a state $s$ and taking the action $a$ and following the policy.
 
 $$
 Q^{\pi} ( s , a )=\mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^{t} R ( s_{t} \, , a_{t} ) | s_{0}=s , a_{0}=a , a_{t > 0}=\pi( s_{t} ) \right]
@@ -49,3 +53,4 @@ Also notice that you can extract the optimal policy for this Q matrix simply by 
 $$
 \pi(s) = argmax \;Q^\pi
 $$
+
