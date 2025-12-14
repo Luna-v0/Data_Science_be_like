@@ -1,4 +1,4 @@
-MDP is a generic framework for modeling decision problem. It models the environment as Probabilistic Finite Automaton (PFA), where actions are model as transitions, but with a caveat, this transitions has probabilities, so the leading state changes. 
+MDP is a generic framework for modelling decision problem. It models the environment as Probabilistic Finite Automaton (PFA), where actions are model as transitions, but with a caveat, this transitions has probabilities, so the leading state changes. 
 
 There are other important notions to MDP which will be discussed through out this document. 
 
