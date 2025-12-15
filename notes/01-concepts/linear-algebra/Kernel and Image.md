@@ -1,5 +1,5 @@
 # Kernel
-Given a [[Matrix#Linear Transformation View|Linear Transformation]] ($Phi$), the set of input values ($V$) that the transformation maps to the zero [[Vector]] in the output ($W$) is the Kernel. Mathematically expressed as:
+Given a [[Matrix#Linear Transformation View|Linear Transformation]] ($Phi$), the set of input values ($V$) that the transformation maps to the zero [[Vector]] in the output ($W$) is the Kernel (or the null space). Mathematically expressed as:
 
 $$
 \begin{gather*}

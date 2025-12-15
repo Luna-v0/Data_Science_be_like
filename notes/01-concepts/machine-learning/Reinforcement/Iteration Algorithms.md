@@ -1,0 +1,2 @@
+## Value Iteration
+This simple algorithm computes the optimal policy by computing the [[Markov Decision Process (MDP)#Value Function|Value Function]] together with the [[Markov Decision Process (MDP)#Q-value function|Q function]]. 

@@ -15,12 +15,14 @@ jupyter:
 ---
 
 # Experiment
-In this notebook the simple Frozen Lake environment of Gymnasium will be study.
+In this notebook the simple Frozen Lake environment of Gymnasium will be study. But using JAX
 ## Imports
 
 ```python
 import gymnasium as gym
 import numpy as np
+import jax.numpy as jnp
+import jax
 ```
 
 ## Setting up the Environments
@@ -47,13 +49,13 @@ num_actions = actions.n
 num_states = states.n
 gamma = 0.99
 
-data_points = np.zeros((STEPS, 4))
+data_points = jnp.zeros((STEPS, 4))
 
 
 for i in range(STEPS):
     action = np.random.choice(range(num_actions))
     next_state, reward, terminated, truncated, info = training_env.step(action)
-    data_points[i] = [current_state, action, reward, next_state]
+    data_points.at[i].set(jnp.array([current_state, action, reward, next_state]))
     current_state = next_state
     if terminated or truncated:
         current_state, info = training_env.reset()
@@ -62,13 +64,13 @@ for i in range(STEPS):
 ## Building the Reward Matrix and Transition Tensor
 
 ```python
-transition_tensor = np.zeros((states.n, actions.n, states.n), dtype=np.float32)
+transition_tensor = jnp.zeros((states.n, actions.n, states.n), dtype=np.float32)
 
-state_action_counter = np.zeros((states.n, actions.n), dtype=np.int32)
+state_action_counter = jnp.zeros((states.n, actions.n), dtype=jnp.int32)
 # for each action states x states
-state_action_tensor = np.zeros((states.n, actions.n,states.n), dtype=np.float32)
+state_action_tensor = jnp.zeros((states.n, actions.n,states.n), dtype=jnp.float32)
 
-reward_matrix = np.zeros((states.n, actions.n), dtype=np.float32)
+reward_matrix = jnp.zeros((states.n, actions.n), dtype=jnp.float32)
 
 for i in range(STEPS):
     current_state, action, reward, next_state = data_points[i]
@@ -81,18 +83,18 @@ for i in range(STEPS):
 
 # Normalize transition_tensor over next states (axis=2), not over actions!
 # transition_tensor[state, action, next_state] = P(next_state | state, action)
-transition_tensor = state_action_tensor / np.sum(state_action_tensor, axis=2, keepdims=True)
+transition_tensor = state_action_tensor / jnp.sum(state_action_tensor, axis=2, keepdims=True)
 # Normalize reward_matrix by the count of (state, action) visits
-reward_matrix = reward_matrix / np.maximum(state_action_counter, 1)  # Avoid division by zero
+reward_matrix = reward_matrix / jnp.maximum(state_action_counter, 1)  # Avoid division by zero
 ```
 
 Just filtering some NaNs
 
 ```python
 # turn all the nans into 0
-reward_matrix = np.nan_to_num(reward_matrix, -1)
+reward_matrix = jnp.nan_to_num(reward_matrix, -1)
 
-transition_tensor = np.nan_to_num(transition_tensor)
+transition_tensor = jnp.nan_to_num(transition_tensor)
 ```
 
 ## The core Value Iteration algorithm
@@ -103,6 +105,8 @@ err = 1
 i = 0
 
 V = np.ones(states.n)
+
+
 
 while err > 1e-8:
   Q = np.zeros((states.n, num_actions))

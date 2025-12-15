@@ -58,6 +58,8 @@ It can also be computed as:
 $$
 A \cdot B = \sum_{k=1}^{n} a_k \cdot b_k^T
 $$
+> [!error] When $x \neq y$ this has a interpretation as a function that maps two different dimensions $x$ dimensions and $y$ dimensions.  
+
 ## Determinant
 The determinant is a [[Linearity#Bi-linearity or N-linearity|N-linearity Function]] on each column.
 
