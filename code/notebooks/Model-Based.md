@@ -96,7 +96,7 @@ transition_tensor = np.nan_to_num(transition_tensor)
 ```
 
 ## The core Value Iteration algorithm
-Here a simple [[Iteration Algorithms#Value Iteration|Value Iteration]] was implemented, which can be further optimised to build the transition tensor, and reward through Value Iteration. 
+Here a simple [[Iteration Algorithms (Planning)#Value Iteration|Value Iteration]] was implemented, which can be further optimised to build the transition tensor, and reward through Value Iteration. 
 
 ```python
 err = 1

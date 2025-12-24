@@ -1,0 +1,1 @@
+The [[Matrix#Determinant|Determinant]] of a Jacobian is a variable change of a double [[Integral]] with relates on calculating the volume. 

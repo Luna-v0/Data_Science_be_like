@@ -54,3 +54,14 @@ $$
 \pi(s) = argmax \;Q^\pi
 $$
 
+# Learning a MDP
+There are 3 main types of things you can learn in a MDP
+
+## Model Based
+Basically the idea is to learn everything, from the model of the world, to the reward function and then you can use one of the [[Iteration Algorithms (Planning)]] to extract the policy. Its by far the most sample efficient.
+
+## Value Based
+You skip the model and the reward function and computes directly the [[Markov Decision Process (MDP)#Q-value function|Value Function]] directly and then extract the policy. Its not as sample efficient as the Model Based approaches, but its iteration efficient. Since it doesn't learn directly a model of the world, it's considered **Model Free**. 
+
+## Policy Based
+You skip the problem completely and the model you are learning is the policy. The great advantage of this is that you can have continuous outputs since you are not extracting a policy matrix, but its the least sample efficient, and the most unstable. Since it doesn't learn directly a model of the world, it's considered **Model Free**. 
