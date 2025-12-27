@@ -1,4 +1,7 @@
-MDP is a generic framework for modelling decision problem. It models the environment as Probabilistic Finite Automaton (PFA), where actions are model as transitions, but with a caveat, this transitions has probabilities, so the leading state changes. 
+MDP is a generic framework for modelling decision problem. 
+
+## Enviroment
+It models the environment as Probabilistic Finite Automaton (PFA), where actions are model as transitions, but with a caveat, this transitions has probabilities, so the leading state changes. This can be represented as a [[Tensor]] of $States \times States \times Actions$ called $P(s'|s,a)$ which can be viewed as: By taking the action $a$ in the state $s$ what is the probability of going to $s'$. It is also referred as stochastic transition model.
 
 There are other important notions to MDP which will be discussed through out this document. 
 
@@ -58,7 +61,7 @@ $$
 There are 3 main types of things you can learn in a MDP
 
 ## Model Based
-Basically the idea is to learn everything, from the model of the world, to the reward function and then you can use one of the [[Iteration Algorithms (Planning)]] to extract the policy. Its by far the most sample efficient.
+Basically the idea is to learn everything, from the model of the world, to the reward function and then you can use one of the [[Iteration Algorithms (Planning)]] to extract the policy. Its by far the most sample efficient. Normally it builds the tensor using [[simulation]].
 
 ## Value Based
 You skip the model and the reward function and computes directly the [[Markov Decision Process (MDP)#Q-value function|Value Function]] directly and then extract the policy. Its not as sample efficient as the Model Based approaches, but its iteration efficient. Since it doesn't learn directly a model of the world, it's considered **Model Free**. 
