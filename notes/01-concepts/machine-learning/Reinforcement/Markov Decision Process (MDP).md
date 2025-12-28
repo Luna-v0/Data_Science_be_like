@@ -58,7 +58,7 @@ $$
 $$
 
 # Learning a MDP
-There are 3 main types of things you can learn in a MDP
+There are 3 main types of things you can learn in a MDP, they can be further subdivides into 2 categories, on-policy and off-policy. On policy means that the estimation is done on the current behavior policy. Off policy means that the estimation is done on a second policy rather then the current behavior policy.
 
 ## Model Based
 Basically the idea is to learn everything, from the model of the world, to the reward function and then you can use one of the [[Iteration Algorithms (Planning)]] to extract the policy. Its by far the most sample efficient. Normally it builds the tensor using [[simulation]].
