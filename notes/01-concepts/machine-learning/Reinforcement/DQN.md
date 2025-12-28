@@ -1,4 +1,4 @@
-Has two [[Neural Networks]] 
+Has two [[Neural Networks (NN)]] 
 ## Replay Buffer
 Has a replay buffer with multiple [[Dataset#Datapoints|datapoints]] of type:
 $$

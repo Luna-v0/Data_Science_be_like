@@ -1,4 +1,4 @@
-Is the basic component of a [[Neural Networks]] (NN), each node of the NN, follows the same principal as a Perceptron. 
+Is the basic component of a [[Neural Networks (NN)]] (NN), each node of the NN, follows the same principal as a Perceptron. 
 
 Its components are:
 * Input [[Vector]] called $\vec{x}$, which act as the value of the other nodes (or just the input)
