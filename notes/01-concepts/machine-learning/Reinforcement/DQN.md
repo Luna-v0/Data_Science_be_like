@@ -1,4 +1,4 @@
-Has two [[Neural Networks (NN)]] 
+Has two [[Neural Networks (NN)]] that doesn't use a activation function in the last layer.
 ## Replay Buffer
 Has a replay buffer with multiple [[Dataset#Datapoints|datapoints]] of type:
 $$
