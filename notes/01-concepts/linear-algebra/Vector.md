@@ -1,4 +1,3 @@
-# Definition
 Is defined as a ordered list of numbers or an array. Geometrically can be interpreted as an arrow in space that has magnitude, direction and orientation.
 
 # Mathematical Formulation

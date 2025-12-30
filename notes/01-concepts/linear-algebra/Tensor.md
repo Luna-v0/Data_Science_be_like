@@ -1,0 +1,1 @@
+They are the abstractions of [[Vector]] and [[Matrix]] for higher dimensions, while a Vector is normally defined as $n$ ordered list, and matrix as $n \times m$ (if a [[Types of Matrices#Square matrix|Square Matrix]] $n²$), then a Tensor can be any, $n \times m \times k$, or higher like $n^m$ (for [[Square Tensors]]). 

@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 5984992
       }
+    },
+    {
+      "query": "path:notes/01-concepts/machine-learning/Reinforcement  ",
+      "color": {
+        "a": 1,
+        "rgb": 13306635
+      }
     }
   ],
   "collapse-display": true,
@@ -33,5 +40,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.3751602688849545,
-  "close": true
+  "close": false
 }
