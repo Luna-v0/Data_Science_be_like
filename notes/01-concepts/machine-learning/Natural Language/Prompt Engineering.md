@@ -10,3 +10,18 @@ Those are 5 main guidelines for creating better prompts.
 5. **Purpose:** What is the objective. 
 
 Other useful stuff is to deal with [[Model Learning#Hyperparameters|Hyperparameters]] for instance lower temperature tend to avoid hallucination.
+
+## Iterative Prompting
+Improving by testing the prompt. Its the most common and simple technique of prompt engineering that can be used together with other techniques. 
+
+## Chain of thought (CoT) prompt
+Is a induction technique to induce the response of the [[Language Models]] linearly, some of the most common:
+* Asking for solving step by step
+* Ask it to argument its response
+* Giving fixed options for its response
+## Tree of thought (ToT) prompt
+It's a hierarchic technique for prompting, this is some template for it:
+
+
+## Graph
+
