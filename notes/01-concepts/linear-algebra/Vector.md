@@ -34,7 +34,7 @@ $$
 Using dot product you can compare two distinct vectors, this is often used in [[Embeddings]] to compare two vectors.
 
 > [!tip] Notice this is highly optimizable using GPU
-> There for any weighted sum can be scaled by libs like [[jax]]
+> There for any weighted sum can be speed up by libs like [[jax]]
 
 ## Magnitude
 The magnitude can be expressed as simple Pythagoras theorem like:

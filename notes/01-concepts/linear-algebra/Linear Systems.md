@@ -8,7 +8,9 @@ x+2y = 3 \\
 \end{cases} \Leftrightarrow \begin{pmatrix} 1 & 2 \\ 4 & 5 \end{pmatrix} \cdot \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 3 \\ 6 \end{pmatrix} 
 $$
 
-This is specially important to #ML since it can be used to define if your dataset has enough features / datapoints.  
+This is specially important to #ML since it can be used to define if your dataset has enough features / datapoints. 
+
+A interesting view of solving systems using [[Matrix|Matrices]] is that the Matrix itself can be viewed as a encoding function of a different [[Base]] into [[Base vectors]]. 
 ## Solving using LU
 
 ## Solving using PLU
