@@ -7,8 +7,7 @@
 7. LLM
 8. Modern GNNs
 9. Supervised Learning
-10. Diverse Cloud for ML
-11. Remember basics using finance (SQL, Matplotlib, Excel, D3)
+10. Remember basics using finance (SQL, Matplotlib, Excel, D3)
 
 
 ## Next things

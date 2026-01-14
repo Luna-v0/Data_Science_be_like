@@ -2,5 +2,7 @@
   "dataview",
   "obsidian-git",
   "jupymd",
-  "obsidian-zotero-desktop-connector"
+  "obsidian-zotero-desktop-connector",
+  "obsidian-excalidraw-plugin",
+  "obsidian-pandoc"
 ]
