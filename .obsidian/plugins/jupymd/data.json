@@ -1,7 +1,7 @@
 {
   "autoSync": true,
   "bidirectionalSync": true,
-  "pythonInterpreter": "python3",
-  "notebookEditorCommand": "code",
+  "pythonInterpreter": "/mnt/hd/Repos/ds_be_like/.venv/bin/python",
+  "notebookEditorCommand": "cursor",
   "enableCodeBlocks": true
 }

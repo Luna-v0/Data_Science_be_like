@@ -13,7 +13,7 @@ Other useful stuff is to deal with [[Model Learning#Hyperparameters|Hyperparamet
 
 
 ## Roles 
-
+For most APIs of LMs there are 3 types of roles. The **user**, which is the one that will create the end question. The **system**, which is often used for defining the tone of the conversation, and setting a role for the LM, like saying it's an expert in determinate domain. And the last role is the **assistant** used for adding context to the model.
 
 
 ## Few, one and zero Shot
