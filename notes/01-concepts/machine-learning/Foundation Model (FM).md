@@ -1,0 +1,1 @@
+Are [[Model Learning|ML Models]] that are pretrained in a large scope of data and can be [[Fine Tuning|fine-tuned]] to a broader range of tasks.

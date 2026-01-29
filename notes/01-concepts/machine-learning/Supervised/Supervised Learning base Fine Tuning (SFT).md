@@ -1,0 +1,1 @@
+Its a [[Fine Tuning]] technique for improving the performance of a [[Model Learning|Learned Model]], normally used to add previously unknown knowledge to the model. It uses a [[Model Learning#Training a Model|Training Dataset]] of input and output. 

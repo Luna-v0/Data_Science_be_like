@@ -41,7 +41,7 @@ Reasoning and Action Loop:
 
   
 
-Background: This repo is for a implementation of a SMILES molecular language parser for validating molecules syntatically and with chemistry semantics. Its goal is to be an alternative to RDKIT and other sophisticated molecular chemistry libraries.
+Background: This repo is for a implementation of a SMILES molecular language parser for validating molecules syntactically and with chemistry semantics. Its goal is to be an alternative to RDKIT and other sophisticated molecular chemistry libraries.
 
   
 
@@ -49,15 +49,15 @@ Task: I want to plan and implement a refactor of the current repo. I want to hav
 
   
 
-1. The Syntax valdiation, which is perfect, do not change the rules of the grammar, you might change what is inside each grammar function but do not add or remove any.
+1. The Syntax validation, which is perfect, do not change the rules of the grammar, you might change what is inside each grammar function but do not add or remove any.
 
   
 
-2. The Graph generation, which you create a graph using the parser functions already created during the parsing, you must implement it as a seprate class. It would be interest in this part to also mark the rings.
+2. The Graph generation, which you create a graph using the parser functions already created during the parsing, you must implement it as a separate class. It would be interest in this part to also mark the rings.
 
   
 
-3. The chemistry validation, which takes the graph at the end of the syntax parsing, and does 2 types of validation, which is rings and valency and aromacity.
+3. The chemistry validation, which takes the graph at the end of the syntax parsing, and does 2 types of validation, which is rings and valency and aromatic.
 
   
 
@@ -71,28 +71,13 @@ Its important that it has two functions for the user to use the validator, one f
 
   
 
-Other then that I need to make a refactor of the strructure of the repo, I understand that the repo doesnt need to have src/smiles_checker/chem and src/smiles_checker/syntax, it can be src/chem and src/syntax.
-
-  
-
-I also need to fix basically all the tests. I have a csv in the tests/validator folder for running during pytest.
-
-  
-
-I also need to update the mkdocs documentation to make it work.
-
-  
-
-I also need to update the analyses folder for using the latest smiles validator.
-
+Other then that I need to make a refactor of the structure of the repo, I understand that the repo doesn't need to have src/smiles_checker/chem and src/smiles_checker/syntax, it can be src/chem and src/syntax.
   
 
 You also need to use src/smiles_checker/periodic-table-lookup.json for atomic info.
 
-  
-
 Your end goal is to implement the Graph generation and chemistry validation requested using the current syntax.
 
-  
+Use `uv run` commands instead of python and use uv to run mkdocs and pytest too. Start reading the code, and then use `uv run pytest` to identify the errors, before fixing the problems define a strategy to identify the cause.
 
-Use `uv run` commands instead of python and use uv to runk mkdocs and pytest too
+Also look at the docs folder for known issues with the system.
