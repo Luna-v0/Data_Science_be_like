@@ -1,0 +1,1 @@
+It uses a teacher [[Model Learning|Learned model]] to train (transfer knowledge) or [[Fine Tuning|fine tune]] another model. Normally you provide just the input to the teacher and the teacher outputs both the input and output to the student. 
