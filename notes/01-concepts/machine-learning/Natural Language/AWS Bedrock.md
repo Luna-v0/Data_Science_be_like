@@ -12,4 +12,4 @@ By AWS policy no input data is used to train a [[Foundation Model (FM)]].
 	3. [[Distillation]]: By using a bigger model to train a smaller one.
 	   
 > [!error] Fine tuning is more expensive, both in work and price, since you will need to prepare your Fine Tuning, and also more expensive since it relies to re train a model. It is also more expensive to run. There is two contract ways to pay for this, one being on demand and the org pay per token, or provisioned throughput which is billed monthly. 
-- It has automatic evaluation, using [[Benchmarks for ML]] and evaluation models. 
+- It has automatic evaluation for models and models with [[Retrieval Augmented Generation (RAG)]], using [[Metrics]] and benchmarks to evaluate models, or models as judges or humans, where humans can be from AWS or from the org.  
