@@ -1,6 +1,6 @@
 It's a technique for semantic searching in a large scopes of data to enhance the context of the [[Language Models]]. It has three parts, a pre-processing the retrieval and generation.
 # Pre-processing
-First a [[Model Learning|Machine Learning Model]] is used for doing Text to [[Vector]], this models are [[Embeddings]] models that turn the files of the context of the application into Vectors and then that is stored in a Vector Database. For big files the system might opt for creating chunks, this chunks are then separately passed through the embedding. 
+First a [[Model Learning|Machine Learning Model]] is used for doing Text to [[Vector]], this models are [[Embeddings]] models that turn the files of the context of the application into Vectors and then that is stored in a [[Vector DB|Vector Databases]]. For big files the system might opt for creating chunks, this chunks are then separately passed through the embedding. 
 
 Modernly this processed can be made using files that not only text-based, but also audio-based or video-based, this requires different types of [[Embeddings]] models, there is also a Multi Modal Embeddings that instead of using different types of Embeddings they use the same model, and the key advantage of doing this is that they are mapped to the same [[Vector Spaces]]. 
 
