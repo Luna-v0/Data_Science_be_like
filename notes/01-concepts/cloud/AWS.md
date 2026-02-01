@@ -23,6 +23,7 @@ You only pay for 3 things on AWS, the **Compute** (RAM, CPU, GPU, etc), the **St
 # Services
 ## Basic
 * **Lambda:** A function calling tool for simple computation, it is spawned on demand, best for occasional executions.
+* **S3**: Simple Storage Service is basically a networking file manager 
 
 ## AI
 - **Bedrock**: A service for deploying chat bots and other generative AI models like [[Language Models]].

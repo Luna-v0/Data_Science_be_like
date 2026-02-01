@@ -2,6 +2,10 @@ Its an [[AWS#Services|AWS Service]] for working with [[Language Models]], it can
 
 By AWS policy no input data is used to train a [[Foundation Model (FM)]]. 
 
+## Use cases
+- Customer service using RAG
+- Legal resources and analysis using the law, past cases and expert analysis. 
+
 ## Features
 - You can execute inference of LLMs, not all the models are available through it.
 - You can test and compare multiple models in a playground interface and change its [[Model Learning#Hyperparameters|Hyperparameters]].
@@ -13,3 +17,8 @@ By AWS policy no input data is used to train a [[Foundation Model (FM)]].
 	   
 > [!error] Fine tuning is more expensive, both in work and price, since you will need to prepare your Fine Tuning, and also more expensive since it relies to re train a model. It is also more expensive to run. There is two contract ways to pay for this, one being on demand and the org pay per token, or provisioned throughput which is billed monthly. 
 - It has automatic evaluation for models and models with [[Retrieval Augmented Generation (RAG)]], using [[Metrics]] and benchmarks to evaluate models, or models as judges or humans, where humans can be from AWS or from the org.  
+- It has [[LLM Agents]] integrations
+- It has integration with Microsoft Sharepoint, confluence and other and more.
+- Multiple RAG implementation and variations (like Chunking strategies and so on)
+- Built in Guardrails for filtering restricted topics, removing personal identifiable information, reduce hallucinations.
+- 

@@ -1,0 +1,1 @@
+The goal of a tokenizer is to convert the text to numbers for the [[Neural Networks (NN)#Multi Layer Perceptron (MLP)|Input Layer]] of [[Language Models]].
