@@ -4,6 +4,12 @@ First a [[Model Learning|Machine Learning Model]] is used for doing Text to [[Ve
 
 Modernly this processed can be made using files that not only text-based, but also audio-based or video-based, this requires different types of [[Embeddings]] models, there is also a Multi Modal Embeddings that instead of using different types of Embeddings they use the same model, and the key advantage of doing this is that they are mapped to the same [[Vector Spaces]]. 
 
+# Chunks
+A problem with the Embedding models is that it has a fixed Input, and inputs can be larger then it, therefore the input is separated into chunks, there are a few types of strategies to do chunking, some of them are:
+- **Fixed Size**: You maintain all chunking at a fixed size with cropping.
+- **Recursive**: You separate the chunks using separator characters, like new line, spaces, tabs and etc.
+- **Semantic**: Use embeddings to evaluate two sequential separated chunked using a similarity score and re chunk if the separated chunks are too low. 
+
 # Retrieval
 When a new query is made by the user, it is passed through the embedding model and it is searched using some kind of similarity score (for instance normalized [[Vector#Dot product|Dot Product]]) for retrieving a top $K$ most similar results. 
 
