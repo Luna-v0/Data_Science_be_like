@@ -19,6 +19,6 @@ By AWS policy no input data is used to train a [[Foundation Model (FM)]].
 - It has automatic evaluation for models and models with [[Retrieval Augmented Generation (RAG)]], using [[Metrics]] and benchmarks to evaluate models, or models as judges or humans, where humans can be from AWS or from the org.  
 - It has [[LLM Agents]] integrations
 - It has integration with Microsoft Sharepoint, confluence and other and more.
-- Multiple RAG implementation and variations (like Chunking strategies and so on)
+- Multiple RAG implementation and variations (like [[Retrieval Augmented Generation (RAG)#Chunks|Chunking]] strategies and so on)
 - Built in Guardrails for filtering restricted topics, removing personal identifiable information, reduce hallucinations.
 - 
