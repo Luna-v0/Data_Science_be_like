@@ -9,6 +9,7 @@ A problem with the Embedding models is that it has a fixed Input, and inputs can
 - **Fixed Size**: You maintain all chunking at a fixed size with cropping.
 - **Recursive**: You separate the chunks using separator characters, like new line, spaces, tabs and etc.
 - **Semantic**: Use embeddings to evaluate two sequential separated chunked using a similarity score and re chunk if the separated chunks are too low. 
+- **Agentic**: Uses [[Language Models]] to analyse and divide the input into chunks. 
 
 # Retrieval
 When a new query is made by the user, it is passed through the embedding model and it is searched using some kind of similarity score (for instance normalized [[Vector#Dot product|Dot Product]]) for retrieving a top $K$ most similar results. 

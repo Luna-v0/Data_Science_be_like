@@ -11,3 +11,5 @@ They are normally implemented as extensions of traditional [[Dataset#DS vs DB|Da
 - Postgres
 - Mongo
 - Pinecone
+- FAISS: Library
+- 
