@@ -1,0 +1,1 @@
+Is a variation of the [[Skip Connection]]. 

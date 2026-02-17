@@ -1,0 +1,1 @@
+It is a type of [[Matrix]] that each column represents a probability [[Distributions|Distribution]], therefore no value should be negative and the sum of the entire column is 1. The [[Vector Spaces]] represented by those matrices have a special name called [[Birkhoff Polytope]].

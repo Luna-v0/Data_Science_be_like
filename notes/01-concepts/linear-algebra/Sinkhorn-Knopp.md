@@ -1,0 +1,1 @@
+Is an algorithm that iterates over any non negative [[Matrix]] and turns into approximately to a  [[Double Stochastic Matrix]]. Every step has two main computations, to normalize the row and to normalize the column. This algorithm computes a special type of [[Projection]] called entropically projected matrix. 
