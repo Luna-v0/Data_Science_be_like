@@ -1,0 +1,1 @@
+Is a standard for [[Language Models]] to communicate with Servers and execute functionalities.
