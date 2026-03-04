@@ -12,3 +12,6 @@ This technique is normally used in problems like code generation via LLM, by def
 ## Inverse Reinforcement Learning
 
 ## Group Relative Policy Optimization
+
+
+## Group Sequence Policy Optimization

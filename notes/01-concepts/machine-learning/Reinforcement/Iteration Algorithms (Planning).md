@@ -41,3 +41,5 @@ $$
 \pi(s) = \operatorname*{argmax}_{a \in Actions}Q(s,a) 
 $$
 Since this approach uses inverse, it takes more computational time, but it takes less iterations to converge.
+
+## Model Predict Control
