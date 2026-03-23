@@ -1,0 +1,1 @@
+Is a type of [[Projection]] for compressing information into lower [[Linear definitions#Dimension|Dimension]]  

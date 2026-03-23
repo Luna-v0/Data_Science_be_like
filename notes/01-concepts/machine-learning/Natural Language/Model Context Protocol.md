@@ -1,1 +1,1 @@
-Is a standard for [[Language Models]] to communicate with Servers and execute functionalities.
+Is a standard for [[Language Models]] to communicate with Servers and execute functionalities. This protocol is separated into two parts, the client and the server. The MCP client is a interface for calling the server, which defines what the LM can do and what it does. 

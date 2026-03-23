@@ -1,0 +1,3 @@
+Usually [[Language Models]]  are not usually trained the same as [[Computer Vision Models]] in the same model, instead what is done is to train a translator model, which translate for instance images to text, and thereby dealing with image. This translations can be viewed as separated model which maps the image semantics [[Vector Spaces]] to the same space as the [[Tokenizers]]. The same can be done for the output space, this is made clear for models that do text to image instead. 
+
+The approach of a model that maps one space to the LM input space is not fixed to only image nor LMs, for instance you could have a model that maps from a basically any input space to any output space, some remarkable ones are: Audios, Videos, Graphs.
