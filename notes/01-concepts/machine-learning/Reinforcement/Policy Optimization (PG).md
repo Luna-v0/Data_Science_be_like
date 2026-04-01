@@ -20,4 +20,4 @@ But since we skip the Q function and Value function entirely in this process the
 $$
 G_t = \sum_{k=t}^{T} \gamma^{k-t}r_k
 $$
-The main problem with this implementation is that the [[Variance]] of $G$ is proportional to the variance of the reward, meaning that a sparse reward generates a sparse 
+The main problem with this implementation is that the [[Variance]] of $G$ is proportional to the variance of the reward, meaning that a sparse reward generates a sparse Advantage. A reason for that is also that $G_t$ acts like the $Q$ function and it does not get discounted for the $V$ which is also a reason of this variance.

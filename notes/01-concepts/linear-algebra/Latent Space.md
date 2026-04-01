@@ -1,1 +1,1 @@
-Is a type of [[Projection]] for compressing information into lower [[Linear definitions#Dimension|Dimension]]  
+Is a type of [[Projection]] for compressing information into lower [[Linear definitions#Dimension|Dimension]]. It is a term normally used in [[Neural Networks (NN)]] inner [[Vector]] in a sub layer of the network. It can also appear as a term for [[Embeddings]].
