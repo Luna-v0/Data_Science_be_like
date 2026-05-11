@@ -15,5 +15,30 @@ Nodes can also have parameters for changing for tuning, an example would be a pa
 # Bag Files
 Bag files are captures of the topics which are cast to a sql lite and you can replay it as it was the real thing. 
 # Services
-Are one shot request and response patterns, thing like save current configuration or things like that.
+Are one shot request and response patterns, thing like save current configuration or things like that. It has a pre defined request and response pattern a single server and any number of clients. The syntax is as following:
 
+```
+# CalibrateCamera.srv
+string mode      # request: what kind of calibration
+---
+bool success     # response
+string message   # response: status/error description
+```
+Where dash line separates request and response.
+
+I can be thread blocking and can cause deadlock, you can also use an async call to stop it. 
+# Actions
+Are long running requests with feedback, like a macro task. Example: Drive to point X. It can be canceled. It takes a progress update and have a a definite endpoint. The syntax is as following:
+
+```
+# DriveToPoint.action
+geometry_msgs/Point target    # goal: where to go
+---
+bool success                  # result: did we make it?
+float32 final_distance_error
+---
+float32 current_distance      # feedback: published periodically during execution
+float32 current_speed
+```
+
+Where the first block of dash lines is the goal, which is sent once. The result which is sent in the end, and the feedback which is streamed through.  
