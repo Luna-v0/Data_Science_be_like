@@ -1,0 +1,1 @@
+It is a technique derived from [[Proximal Policy Optimaztion (PPO)]], which instead of using a Value Network for computing the Advantage Function it uses the normalized average of multiple responses of an [[Language Models]] to compute the advantage. 
