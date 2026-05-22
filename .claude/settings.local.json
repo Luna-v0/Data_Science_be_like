@@ -11,7 +11,10 @@
       "Bash(mv:*)",
       "Bash(rmdir:*)",
       "Bash(tree:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(/mnt/hd/Repos/ds_be_like/.venv/bin/python:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

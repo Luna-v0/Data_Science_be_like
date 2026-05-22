@@ -21,3 +21,6 @@ $$
 G_t = \sum_{k=t}^{T} \gamma^{k-t}r_k
 $$
 The main problem with this implementation is that the [[Variance]] of $G$ is proportional to the variance of the reward, meaning that a sparse reward generates a sparse Advantage. A reason for that is also that $G_t$ acts like the $Q$ function and it does not get discounted for the $V$ which is also a reason of this variance.
+
+To tackle this problem of high variance we add a term that approximate the Value function and take $G_t$ as an approximation of the $Q$ function. To create this approximation we use a Value Network. This is also known as [[Actor Critic]], where the policy network is the actor and the critic is the Value Network. 
+
