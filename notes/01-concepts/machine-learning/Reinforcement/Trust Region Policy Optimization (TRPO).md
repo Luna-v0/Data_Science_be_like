@@ -1,4 +1,4 @@
-It is a iteration over the [[Policy Optimization (PG)#Vanilla Policy Gradient (VPG)|REINFORCE]], it uses the concept of [[Local Approximation]] (known as the surrogate objective) for optimizing the policy. 
+It is a iteration over the [[Policy Optimization (PG)#Vanilla Policy Gradient (VPG)|REINFORCE]], it uses the concept of [[Local Approximation]] (known as the surrogate objective) for optimizing the policy. Instead of optimizing the current policy it takes samples from the current policy and uses batching to update to a new policy, meaning the objective is a bit off the original objective. 
 
 To hold this local approximation we keep two separated version of the policy one old and one updated, and to check if that locality holds between the two policies and optimize base on the newer policy for that we need [[Kullback–Leibler Divergence (KL)|KL divergence]].
 
