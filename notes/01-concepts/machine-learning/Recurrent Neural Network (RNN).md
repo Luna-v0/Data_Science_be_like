@@ -1,0 +1,1 @@
+Is a type of a neural network where its output is returned as input of the next inference 

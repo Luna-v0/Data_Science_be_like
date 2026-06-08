@@ -1,0 +1,1 @@
+Is a type of [[Recurrent Neural Network (RNN)]] that works as a memory. 
