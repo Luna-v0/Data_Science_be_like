@@ -1,0 +1,1 @@
+It is a type of [[World Model]] that is a model free approach with two training loops one for training a model to learn the environment (observations and reward) and a [[Policy Optimization (PG)|Actor Critic]] for learning the policy.
